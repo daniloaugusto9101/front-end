@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, input, button{
+    font-family: Arial, sans-serif;
+}
+
+/* Memnu */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+    align-items: center;
+}
+
+.menu__section{
+    display: flex;
+    align-items: center;
+}
+
+.menu__section.left .menu__icon{
+    font-size: 22px;
+    color: #757575;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.menu__section.left .menu__link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #757575;
+    font-weight: 600;
+    padding: 10px 5px;
+}
+.menu__section.left .menu__link.active{
+    border-bottom: 2px solid #4285f4;
+    color: #4285f4;
+}
+
+.menu__section.left .menu__link:not(active){
+    border-bottom: 2px solid transparent;
+}
+
+.menu__section.right{
+    margin-right: 8px;
+}
+
+.menu__section.right .menu__icon{
+    font-size: 22px;
+    color: #757575;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Content */
+.content{
+    display: flex;
+    /* background: green; */
+    flex-direction: column;
+    min-height: 300px;
+    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.content .content__search{
+    padding: 8px 20px;
+    min-width: 300px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    outline: none;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.800);;
+}

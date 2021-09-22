@@ -1,0 +1,43 @@
+@import url ('https://fonts.googleapis.com/css2? family = Abrir + Sans & display = swap');
+
+html,
+body,
+ul,
+li{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+#menu-h{
+    background: rgb(56, 52, 52);
+}
+
+#menu-h ul{
+    list-style: none;
+    max-width: 600px;
+    margin: auto;
+}
+#menu-h ul li{
+    list-style: none;
+    display: inline;    
+}
+
+#menu-h ul li a{
+    text-decoration: none;
+    color: rgb(248, 247, 247);
+    display: inline-block;
+    padding: 15px;
+}
+
+#menu-h ul li a:hover{
+    background: rgb(24, 61, 170);
+    transition: background .4s;
+}
+
+#menu-h ul li:last-child a{
+    float: right;
+    background: rgb(24, 61, 170);
+}

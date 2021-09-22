@@ -1,0 +1,274 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Nunito";
+    color: #222222;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.superinfo-bg{
+    background: #122ab2;
+}
+
+/* ========================== Superinfo */
+.superinfo{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.superinfo p, .superinfo a{
+    margin: 10px;
+    color: white;
+}
+
+/* ========================== Menu */
+.menu-bg{
+    background: #2c70ff;
+}
+
+.menu{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu-logo a{
+    font-size: 2.25em;
+    font-weight: bold;
+}
+
+.menu a{
+    color: white;
+}
+
+.menu-nav ul{
+    display: flex;    
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu-nav a{
+    display: block;
+    padding: 10px;
+    font-size: 1.25em;
+}
+
+.menu-nav a:hover{
+    color: #122ab2;
+}
+
+/* ========================== Intrudução */
+.introducao{
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 60px 10px;
+    font-size: 3em;
+    line-height: 1;
+}
+
+/* ========================== Sobre */
+.sobre{
+    padding: 60px 10px;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    border-top: 2px solid #2c70ff;
+    border-bottom: 2px solid #2c70ff;
+    flex-wrap: wrap;
+}
+
+.sobre-info{
+    flex: 2 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sobre-info h1{
+    font-size: 3em;
+}
+.sobre-info p{
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: #7c7c7c;
+}
+
+.sobre-img{
+    flex: 1 1 150px;
+}
+
+/* ========================== Produtos */
+.produtos{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 60px 10px;
+}
+.produtos h1{
+    font-size: 3em;
+}
+
+.produtos-container{
+    display: flex;
+    row-gap: 60px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.produtos-item{
+    flex: 1 1 175px;
+    background: #f7f7f7;
+}
+.produtos-item h2{
+    font-size: 3em;
+    padding: 30px 0;
+    color: #7c7c7c;
+}
+
+.purple{
+    border-top: 8px solid rgb(138, 18, 194);
+}
+.pink{
+    border-top: 8px solid rgb(196, 25, 144);
+}
+.blue{
+    border-top: 8px solid rgb(25, 185, 196);
+}
+
+/* ========================== Preços */
+.preco{
+    margin: 0 auto;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: #f7f7f7;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.preco-item{
+    flex:1 1 260px;
+    border: 4px solid white;
+    padding: 40px 20px 20px 20px;
+}
+
+.preco-item h2{
+    font-size: 3em;
+    color: #7c7c7c;
+    text-align: center;
+}
+.preco-item span{
+    font-size: 3em;
+    max-width: 260px;
+    margin: 20px auto;
+    display: block;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0 5px 0;
+}
+.preco-item sup{
+    font-size: 1.5rem;
+}
+.preco-item ul{
+    max-width: 260px;
+    margin: 20px auto;
+    font-size: 1.25em;
+    font-style: italic;
+    color: #7c7c7c;
+}
+.preco-item li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.preco-item li::after{
+    content: '';
+    height: 6px;
+    width: 6px;
+    background: #2c70ff;
+    display: block;
+    border-radius: 50%;
+}
+.preco-item a{
+    text-align: center;
+    display: block;
+    border: 4px solid black;
+    font-size: 2.25em;
+    /* margin: 10px; */
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0;
+    max-width: 260px;
+    margin: 0 auto;
+}
+/* ========================== Qualidade */
+
+.qualidade{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 60px 10px;
+}
+.qualidade-item{
+    flex: 1 1 300px;
+}
+
+.qualidade-item h2{
+    color: #a4a4a4;
+    margin-bottom: 20px;
+    font-size: 2.25em;
+}
+.qualidade-item h2::before{
+    display: inline-block;
+    content: '';
+    width: 8px;
+    height: 30px;
+    background: blue;
+    margin-right: 10px;
+}
+.qualidade-item:nth-of-type(3n+1) h2::before{
+    background: #ae81ff;
+}
+.qualidade-item:nth-child(3n+2) h2::before{
+    background: #f9265e;
+}
+.qualidade-item:nth-child(3n+3) h2::before{
+    background: #66d9eb;
+}
+
+
+.qualidade-item p{
+    font-size: 1.25em;
+    color: #7c7c7c;
+    line-height: 1.4;
+}

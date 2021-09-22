@@ -1,0 +1,77 @@
+html,
+body,
+ul,
+li,
+p{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #333;    
+}
+
+/* Menu */
+header ul{
+    display: flex;
+}
+header li{
+    margin-right: 10px;
+}
+header a {
+    padding: 15px;
+    display: block;
+    cursor: pointer;
+    color: white;
+}
+
+
+.slideLinha{ 
+    background: gray;
+    height: 300px;
+    margin: 20px 0px 20px 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide2{
+    display: flex;
+    column-gap: 10px;
+}
+.artigos{
+    background: #333;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+.artigos img{
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+footer{
+    margin-top: 10px;
+    background: gray;
+    height: 200px;
+    text-align: center;
+}

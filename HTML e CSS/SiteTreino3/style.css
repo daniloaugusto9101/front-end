@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.bg{
+    /* background: rgb(60, 73, 190); */
+    background-image: url("bg.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    /* background: red; */
+    padding: 20px 10px;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu li{
+    padding: 10px;
+}
+
+.menu li:hover{
+    background: #000;
+    cursor: pointer;
+}
+
+.menu-container{
+    display: flex;
+    /* background: green; */
+    column-gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menu-container a{
+    color: white;
+}
+
+.menu-container .button{
+    padding: 5px 25px;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    column-gap: 60px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.main{
+    max-width: 960px;
+    height: 90vh;
+    /* background: yellowgreen; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* padding: 100px 10px; */
+}
+.main p{
+    font-size: 40px;
+    color: white;
+
+}
+
+.main button{
+    padding: 10px 20px;
+    background: black;
+    border: none;
+    color: white;
+}
+
+.main-container{
+    display: flex;
+    background: #000;
+}
