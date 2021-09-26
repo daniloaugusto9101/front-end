@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sitema de multa</h1>
+
+    <input type="number" name="textv" id="textv">/ Km
+    <button id="verificar" >Verificar</button>
+
+    <div id="res">
+
+    </div>
+        
+    <script>
+        var click = document.querySelector(`button#verificar`)
+        click.addEventListener(`click`, clicar)
+
+        function clicar(){    
+
+            var textv = document.querySelector(`input#textv`)
+            var res = document.querySelector(`div#res`)  
+            var vel = Number(textv.value)
+            res.innerHTML = `<p>Sua velocidade: ${vel}/Km </p>`
+
+            if(vel > 60){
+                res.innerHTML += `Limite ultrapassado. MULTADO!`
+            }
+            res.innerHTML += `<p> Dirija sempre com cuidado </p>`
+
+        }
+        
+    </script>
+</body>
+</html>

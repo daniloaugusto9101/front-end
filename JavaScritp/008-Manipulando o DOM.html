@@ -10,36 +10,29 @@
 
 
 
-    <!-- <h1>Texto de teste</h1>
+    <h1>Texto de teste</h1>
     <p>Paragrafo 1</p>
     <p id="par2">Paragrafo 2</p>
-    <div id="divT">Texto de teste</div> -->
+    <div id="divT">Texto de teste</div>
 
 
     <h2>Manipulando o DOM</h2>
     
     <script>
         document.write(`${document.URL} <br>`)
-        document.write(`${document.cookie} <br>`)
+        document.write(`${window.navigator.appName} <br>`)
     </script>
-    
-    <!-- <script>
-        document.write(document.charset+"<br>")
-        document.write(window.navigator.appName+"<br>")
-        document.write(window.document.URL+"<br>")
-    </script>
-    <h2>Selecionando elementos pelo DOM</h2>
+    <h1>Selecionando elementos no DOM</h1>
     <script>
-        var p1 = document.getElementsByTagName('p')[0]
-        document.write(p1.innerText+"<br>")
+        var p1 = document.getElementsByTagName(`p`)[0]
+        document.write(`${p1.innerText} <br>`)
 
-        var p2 = document.getElementById('par2')
-        document.write(p2.innerText)
+        var p2 = document.getElementById(`par2`)
+        document.write(`${p2.innerText} <br>`)
 
-        p1.style.color="red"
+        var divT = document.getElementById(`divT`)
+        divT.style.color = `red`
 
-        var divT = document.querySelector("p#par2")
-        divT.style.color = "blue"
-    </script> -->
+    </script>
 </body>
 </html>
