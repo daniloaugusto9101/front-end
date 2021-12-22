@@ -15,7 +15,7 @@
   <nav class="nav">
     <ul class="nav__lista">
       <li class="nav__item">
-        <a href="" class="nav__link">Home</a>
+        <a href="" class="nav__link" id="nav__link">Home</a>
         <ul class="nav__sub">
           <li class="nav__sub__item">
             <a href="" class="nav__sub__link">Sede</a>
@@ -26,7 +26,7 @@
         </ul>
       </li>
       <li class="nav__item">
-        <a href="" class="nav__link">Serviços</a>
+        <a href="" class="nav__link" id="nav__link">Serviços</a>
         <ul class="nav__sub">
           <li class="nav__sub__item">
             <a href="" class="nav__sub__link">Manutenção</a>
@@ -40,32 +40,38 @@
   </nav>
 </body>
 
-
-<div class="area">
+<!-- 
+<div id="area" class="teste">
   Intereja...
-</div>
+</div> -->
 
 <script>
-  // var a = document.getElementById(`area`)
-  var a = document.getElementsByClassName('area')
-  a.addEventListener(`mouseenter`, entrar)
-  a.addEventListener(`mouseout`, sair)
-  a.addEventListener(`click`, clicar)
+  // // var a = document.getElementById(`nav__link`)
+  // var a = document.getElementsByClassName(`nav__link`)
+  
+
+  // a.addEventListener(`mouseenter`, mudar)
+  // a.addEventListener(`mouseout`, voltar)
+
+
+  // function mudar(){
+  //   while (a.length > 0) {
+  //     a.item(0).classList.add('nav__link');
+  //     a[0].classList.remove('nav__link--active');
+  //   }
+  // }
 
   
-  function entrar(){
-      a.innerHTML = `Entrou...`
-  }
-  
-  function sair(){
-      a.innerHTML = `Saiu...`
-      a.style.background = `green`
-  }
+  // // function mudar(){
+  // //   a.item(0).classList.remove('nav__link');
+  // //   a.item(0).classList.add('nav__link--active');
+  // // }
 
-  function clicar(){
-      a.innerHTML = `Clicou...`
-      a.style.background = `red`
-  }
+  // function voltar(){
+  //   a.classList.remove('nav__link--active');
+  //   a.classList.add('nav__link');
+  // }
+  
 </script>
 
 </html>
