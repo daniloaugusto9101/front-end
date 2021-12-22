@@ -1,0 +1,47 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.barra-menu ul {
+  list-style: none;
+}
+
+.menu {
+  display: flex;
+  position: relative;
+}
+
+.menu--item > a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  background: #000;
+  color: white;
+  border: 1px solid tomato;
+}
+
+.menu--item > a:hover {
+  color: tomato;
+}
+
+.menu--item:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu {
+  position: absolute;
+  display: none;
+}
+
+.sub-menu > li > a {
+  display: block;
+  padding: 10px;
+  background: #4c40b8;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid black;
+  min-width: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */

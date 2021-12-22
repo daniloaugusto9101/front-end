@@ -1,0 +1,25 @@
+.nav__lista {
+  list-style: none;
+  display: flex;
+}
+.nav__link {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  min-width: 150px;
+  background: tomato;
+  border: 1px solid black;
+}
+.nav__sub {
+  list-style: none;
+  padding: 0px;
+}
+.nav__sub__link {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  background: green;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */
