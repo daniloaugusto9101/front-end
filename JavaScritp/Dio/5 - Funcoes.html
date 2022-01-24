@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Funcoes</h1>
+    <script>
+        // Funcao com parametro
+        console.log("=======")
+        function tela(nome, idade) {
+            console.log(`Eu tenho ${idade} anos e me chamdo ${nome}`);
+        }
+        tela("Danilo", 31);
+        console.log("=======")
+
+        // Expressoes de funcoes
+        var novoCarro = function carro() {
+            console.log("Carro Ford Ka")
+        }
+        console.log("=======")
+
+        novoCarro();
+
+        // Expressoes de funcoes 
+        var car = function() {
+            console.log("Carro Voyage")
+        }
+        car();
+
+        console.log("=======")
+        // Arrow function
+        var tela = () => {
+            console.log("Exemplo de arrow function")
+        }
+
+        tela();
+    
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Estrutura condicionais</h1>
+    <ul>
+        <li>For</li>
+        <li>For/in</li>
+        <li>For/of</li>
+        <li>While</li>
+        <li>Di/wile</li>
+    </ul>
+    <script>
+        let vet = ["Ana", "Maria", "Joao", "Jose", "Carlos"];
+        let object = {
+            prop1: "valor",
+            prop2: "valor2",
+            prop3: "valor3"
+        }
+
+        // Estrutura de repicao for
+        console.log("=========");
+        console.log("Estrutura de repeticao for");
+
+        console.log("=========");
+        for (let i = 0; i < vet.length; i++) {
+            console.log(vet[i]);
+
+        }
+        console.log("=========");
+
+        // Estrutura de repicao for/in com array
+        console.log("Estrutura de repicao for/in com array");
+        console.log("=========");
+
+        for (let i in vet) {
+            console.log(vet[i]);
+        }
+
+        console.log("=========");
+
+        // Estrutura de repicao for/in com objeto
+        console.log("Estrutura de repicao for/in com objeto");
+        console.log("=========");
+
+        for (i in object) {
+            console.log(object[i]);
+        }
+
+        console.log("=========");
+
+        // Estrutura de repicao for/of
+        console.log("Estrutura de repicao for/of");
+        console.log("=========");
+
+        for (i of vet) {
+            console.log(i);
+        }
+        console.log("=========");
+
+        // Estrutura de repicao While
+        console.log("Estrutura de repicao While");
+        console.log("=========");
+
+        var a = 0
+        while(a < 10){
+            
+            console.log(a);
+            a++;
+        }
+
+        console.log("=========");
+
+    </script>
+</body>
+
+</html>
