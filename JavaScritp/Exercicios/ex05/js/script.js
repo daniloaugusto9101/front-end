@@ -1,5 +1,17 @@
-var num = prompt("Digite um número");
+document.querySelector("#formulario").addEventListener("submit", function (e) {
+    var idade = document.querySelector("#idade").value;
 
-var qd = num ** 2;
+    if (idade >= 18) {
+        alert("é maior de idade");
+    } else {
+        alert("Não é maior de idade")
+    }
 
-alert(`O quadrado do numero: ${num} é ${qd}`);
+    // if(idade >= 18){
+    //     alert(`Você tem ${idade}, e tera que pagar os boletos `);
+    // }else{
+    //     alert(`Você tem ${idade}, e não paga boletos ainda`);
+    // }
+
+    e.preventDefault();
+});

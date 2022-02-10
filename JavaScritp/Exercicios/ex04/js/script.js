@@ -1,8 +1,31 @@
-var input = document.querySelector("#name");
+var form = document.getElementById("formulario");
+var num = document.getElementById("num");
 
-var texto = "input.value";
+form.addEventListener("submit", function(e){
+    let res = num.value ** 2;
+    alert(res);
 
-console.log(texto);
+    e.preventDefault();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
